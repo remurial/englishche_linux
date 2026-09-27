@@ -1,0 +1,10 @@
+SFML OverviewSFML stands for Simple and Fast Multimedia Library.
+ModulesSFML is composed of 5 modules. They are:System: 
+The core base module providing tools like vectors, clocks, and threads.Window: 
+Manages OS windows, OpenGL contexts, and user input/events.Graphics: 
+Provides 2D rendering capabilities including sprites, text, shapes, and textures.Audio: Handles spatialized sounds, music streaming, and audio recording. 
+Network: Facilitates socket-based communications and high-level protocols like HTTP and FTP.
+Event Handling and Window ManagementpollEvent Return Value: When there are no pending events, pollEvent returns false in SFML 2.x, or std::nullopt (empty optional) in SFML 3.x.** Handled Event:** In the standard boilerplate lifecycle loop, 
+the sf::Event::Closed event is explicitly caught to detect
+when a user requests to close the application (e.g., clicking the 'X' button).Window Closing Function: 
+The window.close() function must be called to explicitly destroy the window and clean up its allocated OS resources.
